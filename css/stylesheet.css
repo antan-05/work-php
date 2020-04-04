@@ -1,0 +1,148 @@
+/*-------------general----------------*/
+a{
+    outline:none;
+    border:none;
+}
+
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('./fonts/droidsans-webfont.woff2') format('woff2'),
+         url('./fonts/droidsans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'droid_sansbold';
+    src: url('./fonts/droidsans-bold-webfont.woff2') format('woff2'),
+         url('./fonts/droidsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*--------------general:end-----------*/
+
+
+.carousel-control-next, .carousel-control-prev {
+
+    position: absolute;
+    top: 45% !important;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50px !important;
+    height:50px !important;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+
+}
+
+.overlay-bg{
+    position:absolute;
+    top:0;
+    bottom:0;
+    background:rgba(0,0,0,.4);
+    z-index:2;
+    width:100%;
+}
+
+.carousel-content{
+    position: absolute;
+    top: 40%;
+    left: auto;
+    right: auto;
+    text-align: center;
+    width: 100%;
+    z-index: 3;    
+}
+
+.carousel-content h2{
+    font-family: 'droid_sansregular', sans-serif;
+    color:#fff;
+    font-size:45px;
+    font-weight:300;
+    text-transform:capitalize;
+}
+ a.btn-success{
+    padding:10px 24px;
+    font-size:25px;
+    text-transform:capitalize !important;
+ }
+
+
+ /*----------------Services:Start----------------------------*/
+ .services_panel{
+    position:relative;
+    margin:0;
+    padding-top:30px;
+ }
+
+ .services_panel h3{
+    font-family: 'droid_sansbold', sans-serif;
+    color:#000;
+    font-size:30px;
+    font-weight:600;
+    display:block;
+
+ }
+  .services_panel h3::before{
+    position:absolute;
+    content:"";
+    top:43px;
+    height:2px;
+    width:50px;
+    background-color:#FF5126;
+  }
+ .services_panel p{
+    font-family: 'droid_sansregular', sans-serif;
+    color:#000;
+    font-size:20px;
+    font-weight:normal;
+    padding-top:25px;
+ }
+
+ .panel_boxes{
+    margin-top: 40px;
+ }
+ .left-box-content{
+    float:left;
+    width:100%;
+    margin-bottom:30px;
+ }
+.icon-bg{
+    float:left;
+    width:15%;
+}
+.icon-bg i{
+    font-size:40px;
+    color:#cccccc !important;
+}
+
+.content-text-copy{
+    float:right;
+    width:85%;
+}
+.content-text-copy h4{
+    font-family: 'droid_sansregular', sans-serif;
+    color:#FF5126;;
+    font-size:20px;
+    font-weight:300;
+ }
+ .content-text-copy p{
+    font-family: 'droid_sansregular', sans-serif;
+    color:#000;;
+    font-size:15px;
+    font-weight:300;
+    padding-top:5px;
+ }
